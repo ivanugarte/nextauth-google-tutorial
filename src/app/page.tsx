@@ -1,6 +1,6 @@
 function HomePage() {
   return (
-    <div>PASO POR LA AUTH DE GOOGLE </div>
+    <div>pagina principal </div>
   )
 }
 

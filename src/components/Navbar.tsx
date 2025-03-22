@@ -19,15 +19,15 @@ function Navbar() {
             {session.user.name} {session.user.email}
           </p>
           <img
-            src={session.user.image}
-            alt=""
+            src={session.user.image ?? "/default-avatar.png"}
+            alt="User Avatar"
             className="w-10 h-10 rounded-full cursor-pointer"
           />
           <button
             onClick={async () => {
               await signOut({
                 callbackUrl: "/",
-              })
+              });
             }}
           >
             Logout
